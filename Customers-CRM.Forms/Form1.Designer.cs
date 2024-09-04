@@ -43,7 +43,7 @@
             til2Text = new TextBox();
             label6 = new Label();
             saveButton = new Button();
-            countryText = new TextBox();
+            emailText = new TextBox();
             label7 = new Label();
             SuspendLayout();
             // 
@@ -176,13 +176,13 @@
             saveButton.UseVisualStyleBackColor = true;
             saveButton.Click += saveButton_Click;
             // 
-            // countryText
+            // emailText
             // 
-            countryText.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            countryText.Location = new Point(361, 415);
-            countryText.Name = "countryText";
-            countryText.Size = new Size(100, 23);
-            countryText.TabIndex = 14;
+            emailText.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            emailText.Location = new Point(361, 415);
+            emailText.Name = "emailText";
+            emailText.Size = new Size(100, 23);
+            emailText.TabIndex = 14;
             // 
             // label7
             // 
@@ -190,9 +190,9 @@
             label7.AutoSize = true;
             label7.Location = new Point(361, 388);
             label7.Name = "label7";
-            label7.Size = new Size(39, 15);
+            label7.Size = new Size(36, 15);
             label7.TabIndex = 15;
-            label7.Text = "Χώρα";
+            label7.Text = "Email";
             // 
             // Form1
             // 
@@ -200,7 +200,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label7);
-            Controls.Add(countryText);
+            Controls.Add(emailText);
             Controls.Add(saveButton);
             Controls.Add(label6);
             Controls.Add(til2Text);
@@ -241,7 +241,7 @@
         private TextBox til2Text;
         private Label label6;
         private Button saveButton;
-        private TextBox countryText;
+        private TextBox emailText;
         private Label label7;
     }
 }

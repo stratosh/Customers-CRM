@@ -103,7 +103,7 @@
                     new XElement("Address", customer.Address),
                     new XElement("City", customer.City),
                     new XElement("PostalCode", customer.PostalCode),
-                    new XElement("Country", customer.Country),
+                    new XElement("Email", customer.Email),
                     new XElement("Phone", customer.Phone),
                     new XElement("Phone2", customer.Phone2)
                 );

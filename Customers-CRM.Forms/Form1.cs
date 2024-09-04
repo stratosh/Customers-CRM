@@ -82,7 +82,15 @@ namespace Customers_CRM.Forms
                 Customer customer = new Customer();
                 customer.Name = onomaText.Text;
                 customer.Address = addressText.Text;
-                customer.Country = countryText.Text;
+                if (!emailText.Text.Contains("@"))
+                {
+                    MessageBox.Show("Παρακαλώ εισάγετε ένα έγκυρο email.");
+                    return;
+                }
+                else
+                {
+                    customer.Email = emailText.Text;
+                }
                 customer.City = cityText.Text;
                 if (int.TryParse(tkText.Text, out int postalCode))
                 {
