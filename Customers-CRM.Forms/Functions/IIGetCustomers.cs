@@ -1,15 +1,9 @@
-﻿using Customers_CRM.Library.Classes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Customers_CRM.Forms.Functions
+﻿namespace Customers_CRM.Forms.Functions
 {
     public interface IIGetCustomers
     {
-        public Task<List<Customer>> FetchCustomersFromApiAsync();
-
+        public Task<List<Customer>> GetCustomersAsync();
+        public Task<Result> EditCustomer(string value, int row, int column);
+        public Task<Result> AddCustomer(Customer customer);
     }
 }

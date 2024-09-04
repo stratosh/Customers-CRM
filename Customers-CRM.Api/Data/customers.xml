@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<People>
+  <Person>
+    <Name>Stratos Paraskevopoulos 1</Name>
+    <Address>Papadaki 31</Address>
+    <City>Thessaloniki</City>
+    <PostalCode>12345</PostalCode>
+    <Country>Greece</Country>
+    <Phone>+306948736581</Phone>
+    <Phone2>306948736511</Phone2>
+  </Person>
+  <Person>
+    <Name>Stratos Paraskevopoulos 2 </Name>
+    <Address>Nemeas 31</Address>
+    <City>Thessaloniki</City>
+    <PostalCode>12345</PostalCode>
+    <Country>BG</Country>
+    <Phone>+306948736581</Phone>
+    <Phone2>306948736511</Phone2>
+  </Person>
+  <Person>
+    <Name>Stratos Paraskevopoulos 3 </Name>
+    <Address>Nemeas 31</Address>
+    <City>Thessaloniki</City>
+    <PostalCode>12345</PostalCode>
+    <Country>TEst</Country>
+    <Phone>+306948736581</Phone>
+    <Phone2>306948736511</Phone2>
+  </Person>
+  <Person>
+    <Name>Stratos Paraskevopoulos 4</Name>
+    <Address>Nemeas 31</Address>
+    <City>Thessaloniki</City>
+    <PostalCode>12345</PostalCode>
+    <Country>xaxa</Country>
+    <Phone>+306948736581</Phone>
+    <Phone2>306948736511</Phone2>
+  </Person>
+  <Person>
+    <Name>123123</Name>
+    <Address>test</Address>
+    <City>test</City>
+    <PostalCode>12345</PostalCode>
+    <Country>xaxww</Country>
+    <Phone>+306948736581</Phone>
+    <Phone2>306948736511</Phone2>
+  </Person>
+  <Person>
+    <Name>στρατοσ</Name>
+    <Address>νεμεασ</Address>
+    <City>τηεσσνικι</City>
+    <PostalCode>55555</PostalCode>
+    <Country>γρεσε</Country>
+    <Phone>123312312</Phone>
+    <Phone2>123123123</Phone2>
+  </Person>
+  <Person>
+    <Name>test1</Name>
+    <Address>test23</Address>
+    <City>test2</City>
+    <PostalCode>323232</PostalCode>
+    <Country>tete</Country>
+    <Phone>3232</Phone>
+    <Phone2>3232</Phone2>
+  </Person>
+  <Person>
+    <Name>test5</Name>
+    <Address>555</Address>
+    <City>555</City>
+    <PostalCode>555</PostalCode>
+    <Country>555</Country>
+    <Phone>5555</Phone>
+    <Phone2>555</Phone2>
+  </Person>
+</People>
