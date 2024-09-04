@@ -6,11 +6,10 @@
         public async Task<List<Customer>> LoadCustomers(string xmlFilePath)
         {
             if (string.IsNullOrEmpty(xmlFilePath))
-                throw new ArgumentException("XML file path cannot be null or empty.", nameof(xmlFilePath));
+                throw new ArgumentException("To xmlFilePath είναι κενό", nameof(xmlFilePath));
 
             if (!File.Exists(xmlFilePath))
-                throw new FileNotFoundException("The specified XML file was not found.", xmlFilePath);
-
+                throw new FileNotFoundException("Το XML δεν βρέθηκε στο path: ", xmlFilePath);
             try
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(People));
@@ -23,7 +22,7 @@
             }
             catch (Exception ex)
             {
-                throw new ApplicationException("An error occurred while loading and deserializing the XML.", ex);
+                throw new ApplicationException("Βρέθηκε πρόβλημα στην αποκωδοικοποίηση του People.", ex);
             }
         }
         public async Task<Result> EditCustomers(string xmlFilePath, EditCustomers editData)
@@ -33,53 +32,41 @@
             if (editData == null)
             {
                 result.success = false;
-                result.messages = "Invalid edit data.";
+                result.messages = "Κενά ή λανθασμένα δεδομένα αλλαγής χρήστη";
                 return result;
             }
-
             try
             {
-                // Ensure the file exists
                 if (!System.IO.File.Exists(xmlFilePath))
                 {
                     result.success = false;
-                    result.messages = "XML file not found.";
+                    result.messages = "Το αρχείο xml δεν βρέθηκε.";
                     return result;
                 }
-
-                // Load the XML file
                 XDocument xdoc;
                 using (var fileStream = new FileStream(xmlFilePath, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
                 {
                     xdoc = XDocument.Load(fileStream);
-
                     var personElement = xdoc.Descendants("Person").ElementAtOrDefault(editData.Row);
                     if (personElement == null)
                     {
                         result.success = false;
-                        result.messages = "Row not found.";
+                        result.messages = "Η γραμμή δεν βρέθηκε.";
                         return result;
                     }
-
                     var elementToUpdate = personElement.Elements().ElementAtOrDefault(editData.Column);
                     if (elementToUpdate == null)
                     {
                         result.success = false;
-                        result.messages = "Column not found.";
+                        result.messages = "Η στήλη δεν βρέθηκε.";
                         return result;
                     }
-
-                    // Update the value
                     elementToUpdate.Value = editData.Value;
-
                     fileStream.SetLength(0); 
                     fileStream.Seek(0, SeekOrigin.Begin); 
-
                     xdoc.Save(fileStream);
                 }
-
                 result.success = true;
-                result.messages = "File updated successfully.";
                 return result;
             }
             catch (IOException ioEx)

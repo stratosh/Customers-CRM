@@ -25,7 +25,7 @@ namespace Customers_CRM.Forms
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error loading customers: {ex.Message}");
+                MessageBox.Show($"Πρόβλημα στην φόρτωση των πελατών {ex.Message}");
             }
         }
         private void InitializeDataGridView()
@@ -107,7 +107,7 @@ namespace Customers_CRM.Forms
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"Error loading customers: {ex.Message}");
+                    MessageBox.Show($"Πρόβλημα στην φόρτωση των πελατών {ex.Message}");
                 }
             }
         }
