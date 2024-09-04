@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<People>
+    <Person>
+        <Name>John Doe</Name>
+        <Address>123 Elm Street</Address>
+        <City>Springfield</City>
+        <PostalCode>12345</PostalCode>
+        <Country>USA</Country>
+        <Phone>+1-555-1234</Phone>
+        <Phone2>+1-555-5678</Phone2>
+    </Person>
+    <Person>
+        <Name>Jane Smith</Name>
+        <Address>456 Oak Avenue</Address>
+        <City>Metropolis</City>
+        <PostalCode>67890</PostalCode>
+        <Country>USA</Country>
+        <Phone>+1-555-8765</Phone>
+        <Phone2>+1-555-4321</Phone2>
+    </Person>
+    <Person>
+        <Name>Bob Johnson</Name>
+        <Address>789 Maple Lane</Address>
+        <City>Gotham</City>
+        <PostalCode>10112</PostalCode>
+        <Country>USA</Country>
+        <Phone>+1-555-1357</Phone>
+        <Phone2>+1-555-2468</Phone2>
+    </Person>
+    <Person>
+        <Name>Alice Williams</Name>
+        <Address>101 Pine Court</Address>
+        <City>Smallville</City>
+        <PostalCode>14161</PostalCode>
+        <Country>USA</Country>
+        <Phone>+1-555-9753</Phone>
+        <Phone2>+1-555-8642</Phone2>
+    </Person>
+    <Person>
+        <Name>Michael Brown</Name>
+        <Address>202 Cedar Street</Address>
+        <City>Central City</City>
+        <PostalCode>20212</PostalCode>
+        <Country>USA</Country>
+        <Phone>+1-555-2468</Phone>
+        <Phone2>+1-555-1357</Phone2>
+    </Person>
+</People>

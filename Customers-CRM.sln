@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers-CRM.Library", "Customers-CRM.Library\Customers-CRM.Library.csproj", "{00C7FE2B-7995-45B0-A3F3-1590E36B02C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers-CRM.Library", "Customers-CRM.Library\Customers-CRM.Library.csproj", "{00C7FE2B-7995-45B0-A3F3-1590E36B02C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customers-CRM.Api", "Customers-CRM.Api\Customers-CRM.Api.csproj", "{EA384516-7FD0-434E-B7C7-0AF5CB0443E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customers-CRM.Forms", "Customers-CRM.Forms\Customers-CRM.Forms.csproj", "{AD576E43-194A-47A9-8A3A-3697E1FAC26B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{00C7FE2B-7995-45B0-A3F3-1590E36B02C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00C7FE2B-7995-45B0-A3F3-1590E36B02C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00C7FE2B-7995-45B0-A3F3-1590E36B02C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA384516-7FD0-434E-B7C7-0AF5CB0443E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA384516-7FD0-434E-B7C7-0AF5CB0443E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA384516-7FD0-434E-B7C7-0AF5CB0443E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA384516-7FD0-434E-B7C7-0AF5CB0443E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD576E43-194A-47A9-8A3A-3697E1FAC26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD576E43-194A-47A9-8A3A-3697E1FAC26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD576E43-194A-47A9-8A3A-3697E1FAC26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD576E43-194A-47A9-8A3A-3697E1FAC26B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
